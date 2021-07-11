@@ -70,15 +70,20 @@ public class Solution {
             }
             rightAnswer = subArrayRight.length - repeatedCounterRight;
         }
-
+        System.out.println("Disks on the left bar: ");
         for(int i = 0; i < subArrayLeft.length; i++)
         {
-            System.out.println(subArrayLeft[i]);
+            if(subArrayLeft[i] != 0) {
+                System.out.println(subArrayLeft[i]);
+            }
         }
         System.out.println("--------");
+        System.out.println("Disks on the right bar: ");
         for(int i = 0; i < subArrayRight.length; i++)
         {
-            System.out.println(subArrayRight[i]);
+            if(subArrayRight[i] != 0) {
+                System.out.println(subArrayRight[i]);
+            }
         }
         System.out.println("--------");
 
